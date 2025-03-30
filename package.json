@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "build": "mkdir -p dist && cp -r * dist/"
+    "build": "npx ncp . dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
   }
 }

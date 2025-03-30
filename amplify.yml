@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install  # Install dependencies
+    build:
+      commands:
+        - npm run build  # Run the build script to generate the dist/ folder
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'  # Deploy all files in the dist/ folder
+  cache:
+    paths:
+      - node_modules/**/*
