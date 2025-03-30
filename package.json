@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "mkdir -p dist && cp -r * dist/"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3"
   }
